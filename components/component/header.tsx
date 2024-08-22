@@ -25,11 +25,12 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export function Header() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center text-white bg-black">
+      <header className="px-4 lg:px-6 h-14 flex items-center text-white bg-blue-500">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">VVUAT Inc</span>
@@ -60,66 +61,73 @@ export function Header() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Jasa Pembuatan Website No.1 di Indonesia</h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-blue-500">Jasa Pembuatan Website No.1 di Indonesia</h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">Layanan kami dirancang untuk membantu Anda menyederhanakan operasi, meningkatkan produktivitas, dan mendorong pertumbuhan.</p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
+                  <Button
                     href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    className="bg-white-500 inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium text-blue-500 border border-blue-500 shadow transition-colors hover:bg-primary/20 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     Buat Sekarang
-                  </Link>
+                  </Button>
                 </div>
               </div>
               <header>
-                <img src="/globe.png" width="550" height="550" alt="Hero" className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square" />
+                <img src="/globee.png" width="550" height="550" alt="Hero" className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom w-full h-auto lg:order-last lg:aspect-square" />
               </header>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Kenapa VVUAT?</h2>
-              <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Produk dan layanan kami dirancang untuk membantu Anda mencapai tujuan bisnis Anda.</p>
-            </div>
-            <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
-                  <GaugeIcon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Faster Workflows</h3>
-                  <p className="text-muted-foreground">Streamline your processes and boost productivity.</p>
-                </div>
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+              <div className="flex items-center justify-center">
+                <img src="/kami.png" alt="Descriptive Alt Text" className="rounded-xl" />
               </div>
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
-                  <ShieldIcon className="w-6 h-6 text-primary-foreground" />
+              <div>
+                <div className="space-y-4 text-center">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-blue-500">Kenapa VVUAT?</h2>
+                  <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Produk dan layanan kami dirancang untuk membantu Anda mencapai tujuan bisnis Anda.</p>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Secure Solutions</h3>
-                  <p className="text-muted-foreground">Protect your data and ensure compliance.</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
-                  <BoltIcon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Scalable Performance</h3>
-                  <p className="text-muted-foreground">Grow your business with our scalable solutions.</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
-                  <UsersIcon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Dedicated Support</h3>
-                  <p className="text-muted-foreground">Get personalized support from our experts.</p>
+                <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-2">
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="bg-blue-500 rounded-md p-3 flex items-center justify-center">
+                      <GaugeIcon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">Faster Workflows</h3>
+                      <p className="text-muted-foreground">Streamline your processes and boost productivity.</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="bg-blue-500 rounded-md p-3 flex items-center justify-center">
+                      <ShieldIcon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">Secure Solutions</h3>
+                      <p className="text-muted-foreground">Protect your data and ensure compliance.</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="bg-blue-500 rounded-md p-3 flex items-center justify-center">
+                      <BoltIcon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">Scalable Performance</h3>
+                      <p className="text-muted-foreground">Grow your business with our scalable solutions.</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="bg-blue-500 rounded-md p-3 flex items-center justify-center">
+                      <UsersIcon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">Dedicated Support</h3>
+                      <p className="text-muted-foreground">Get personalized support from our experts.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

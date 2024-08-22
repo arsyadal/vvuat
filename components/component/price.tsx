@@ -21,11 +21,11 @@ import { Button } from "@/components/ui/button";
 
 export default function Price() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-400">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Pilih Paket Anda</h2>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Temukan paket sempurna yang sesuai dengan kebutuhan Anda.</p>
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">Pilih Paket Anda</h2>
+          <p className="mx-auto max-w-[600px] text-white  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Temukan paket sempurna yang sesuai dengan kebutuhan Anda.</p>
         </div>
         <div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-lg border bg-background p-6 shadow-sm">

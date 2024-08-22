@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   return (
     <div className="flex flex-col h-screen m-0 p-0">
-      <header className="bg-gray-900 text-white py-4 px-6 md:px-8 flex items-center justify-between m-0">
+      <header className="bg-blue-500 text-white py-4 px-6 md:px-8 flex items-center justify-between m-0">
         <Link href="#" className="flex items-center gap-2 m-0" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
+
           <span className="text-lg font-semibold">Acme Inc</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 m-0">
@@ -29,7 +30,7 @@ export function Navbar() {
         </Button>
       </header>
       <main className="flex-1 m-0 p-0" />
-      <nav className="bg-gray-900 text-white py-2 px-4 flex justify-around md:hidden m-0">
+      <nav className="bg-blue-500 text-white py-2 px-4 flex justify-around md:hidden m-0">
         <Link href="#" className="flex flex-col items-center gap-1 m-0" prefetch={false}>
           <HomeIcon className="h-6 w-6" />
           <span className="text-xs">Home</span>
