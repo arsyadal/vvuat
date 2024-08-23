@@ -14,12 +14,12 @@ export function Work() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="flex flex-col items-center gap-4 rounded-lg bg-500 p-6 shadow-l border border-blue-500">
-              <div className="bg-white rounded-md p-3 flex border-blue-500 items-center justify-center">
-                <ClipboardIcon className="w-6 h-6 text-blue-500" />
+            <div className="flex flex-col items-center gap-4 rounded-lg bg-500 p-6 shadow-l border border-blue-500 bg-blue-500">
+              <div className="bg-muted rounded-md p-3 flex border-blue-500 items-center justify-center">
+                <ClipboardIcon className=" w-6 h-6 text-blue-500" />
               </div>
-              <h3 className="text-xl font-semibold text-blue-500">Discovery</h3>
-              <p className="text-blue-500">Kami mulai memahami bisnis, sasaran, dan tantangan Anda secara mendalam. Hal ini memungkinkan kami untuk menyusun solusi khusus yang menjawab kebutuhan Anda.</p>
+              <h3 className="text-xl font-semibold text-white">Discovery</h3>
+              <p className="text-white">Kami mulai memahami bisnis, sasaran, dan tantangan Anda secara mendalam. Hal ini memungkinkan kami untuk menyusun solusi khusus yang menjawab kebutuhan Anda.</p>
             </div>
             <div className="flex flex-col items-center gap-4 rounded-lg border bg-background p-6 shadow-sm bg-blue-500">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
@@ -28,12 +28,12 @@ export function Work() {
               <h3 className="text-xl font-semibold text-white">Design</h3>
               <p className="text-white">Proses desain kami bersifat kolaboratif dan berulang, memastikan bahwa produk akhir tidak hanya tampak hebat tetapi juga memberikan pengalaman pengguna yang baik.</p>
             </div>
-            <div className="flex flex-col items-center gap-4 rounded-lg border bg-background p-6 shadow-sm">
-              <div className="bg-muted rounded-md p-3 flex items-center justify-center">
-                <CodeIcon className="w-6 h-6 text-muted-foreground" />
+            <div className="flex flex-col items-center gap-4 rounded-lg border border-blue-500 bg-blue-500 p-6 shadow-sm">
+              <div className="bg-muted rounded-md p-3 flex items-center justify-center ">
+                <CodeIcon className="w-6 h-6 text-blue-500" />
               </div>
-              <h3 className="text-xl font-semibold">Development</h3>
-              <p className="text-muted-foreground">Tim pengembang kami yang berpengalaman memanfaatkan teknologi terkini dan praktik terbaik untuk mewujudkan visi Anda, memastikan solusi yang tangguh dan terukur.</p>
+              <h3 className="text-xl font-semibold text-white">Development</h3>
+              <p className="text-white">Tim pengembang kami yang berpengalaman memanfaatkan teknologi terkini dan praktik terbaik untuk mewujudkan visi Anda, memastikan solusi yang tangguh dan terukur.</p>
             </div>
           </div>
         </div>
