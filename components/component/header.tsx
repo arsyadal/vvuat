@@ -97,8 +97,8 @@ export function Header() {
                       <GaugeIcon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">Faster Workflows</h3>
-                      <p className="text-muted-foreground">Streamline your processes and boost productivity.</p>
+                      <h3 className="text-lg font-semibold">Alur Kerja Cepat</h3>
+                      <p className="text-muted-foreground">Sederhanakan proses Anda dan tingkatkan produktivitas.</p>
                     </div>
                   </div>
                   <div className="flex flex-col items-center text-center gap-4">
@@ -106,8 +106,8 @@ export function Header() {
                       <ShieldIcon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">Secure Solutions</h3>
-                      <p className="text-muted-foreground">Protect your data and ensure compliance.</p>
+                      <h3 className="text-lg font-semibold">Solusi Aman</h3>
+                      <p className="text-muted-foreground">Lindungi data Anda dan pastikan aman dari ancaman.</p>
                     </div>
                   </div>
                   <div className="flex flex-col items-center text-center gap-4">
@@ -115,8 +115,8 @@ export function Header() {
                       <BoltIcon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">Scalable Performance</h3>
-                      <p className="text-muted-foreground">Grow your business with our scalable solutions.</p>
+                      <h3 className="text-lg font-semibold">Terjangkau</h3>
+                      <p className="text-muted-foreground">Tak perlu khawatir soal biaya.</p>
                     </div>
                   </div>
                   <div className="flex flex-col items-center text-center gap-4">
@@ -124,8 +124,8 @@ export function Header() {
                       <UsersIcon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">Dedicated Support</h3>
-                      <p className="text-muted-foreground">Get personalized support from our experts.</p>
+                      <h3 className="text-lg font-semibold">Dedikasi Dukungan</h3>
+                      <p className="text-muted-foreground">Dapatkan dukungan yang dipersonalisasi dari para ahli kami..</p>
                     </div>
                   </div>
                 </div>

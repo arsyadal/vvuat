@@ -7,23 +7,23 @@ import Link from "next/link";
 
 export default function Component() {
   return (
-    <footer className="bg-muted py-6 md:py-8">
-      <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+    <footer className="bg-muted py-6 md:py-8 bg-blue-100">
+      <div className="container flex flex-col items-center justify-between gap-4 md:flex-row ">
         <div className="flex items-center gap-4">
           <Link href="#" className="flex items-center" prefetch={false}>
-            <MountainIcon className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <MountainIcon className="h-6 w-6 text-blue-500" />
+            <span className="sr-only">VVUAT | Jasa Pembuatan No.1 di Indonesia</span>
           </Link>
-          <p className="text-xs text-muted-foreground">&copy; 2024 Acme Inc. All rights reserved.</p>
+          <p className="text-xs  text-blue-500 ">&copy; VVUAT | Jasa Pembuatan No.1 di Indonesia . All rights reserved.</p>
         </div>
-        <div className="flex items-center gap-4">
-          <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <div className="flex items-center gap-4 ">
+          <Link href="#" aria-label="Twitter" className="text-blue-500 hover:text-blue-600" prefetch={false}>
             <TwitterIcon className="h-5 w-5" />
           </Link>
-          <Link href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="#" aria-label="linkedin" className="text-blue-500 hover:text-blue-600" prefetch={false}>
             <LinkedinIcon className="h-5 w-5" />
           </Link>
-          <Link href="#" aria-label="GitHub" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="#" aria-label="gitlab" className="text-blue-500 hover:text-blue-600" prefetch={false}>
             <GitlabIcon className="h-5 w-5" />
           </Link>
         </div>
