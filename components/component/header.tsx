@@ -3,16 +3,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 library.add(faWhatsapp);
 
-
 export function Header() {
-  const handleScroll = (event) => {
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href").substring(1);
+    const targetId = event.currentTarget.getAttribute("href")!.substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +22,13 @@ export function Header() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center text-white bg-blue-500">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6" />
+          <Image
+            src="/vvuat.png"
+            alt="Mountain Icon"
+            width={100} // Sesuaikan dengan ukuran yang diinginkan
+            height={100} // Sesuaikan dengan ukuran yang diinginkan
+            className="h-6 w-6"
+          />{" "}
           <span className="sr-only">VVUAT Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -55,7 +60,7 @@ export function Header() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-blue-500">Jasa Pembuatan Website No.1 di Indonesia</h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-blue-500">Fokus ke Bisnis Anda, Percayakan pada Kami</h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">Layanan kami dirancang untuk membantu Anda menyederhanakan operasi, meningkatkan produktivitas, dan mendorong pertumbuhan.</p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -68,7 +73,7 @@ export function Header() {
                 </div>
               </div>
               <header>
-                <img src="/globee.png" width="550" height="550" alt="Hero" className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom w-full h-auto lg:order-last lg:aspect-square" />
+                <Image src="/globee.png" width={550} height={550} alt="Hero" className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom w-full h-auto lg:order-last lg:aspect-square" />{" "}
               </header>
             </div>
           </div>
@@ -77,7 +82,13 @@ export function Header() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex items-center justify-center">
-                <img src="/kami.png" alt="Descriptive Alt Text" className="rounded-xl" />
+                <Image
+                  src="/kami.png"
+                  alt="Descriptive Alt Text"
+                  width={500} // Sesuaikan dengan ukuran yang diinginkan
+                  height={500} // Sesuaikan dengan ukuran yang diinginkan
+                  className="rounded-xl"
+                />
               </div>
               <div>
                 <div className="space-y-4 text-center">
@@ -128,17 +139,17 @@ export function Header() {
         </section>
       </main>
       <a
-  href="https://api.whatsapp.com/send/?phone=%2B6287742679972&text=Halo+VVUAT.web+saya+mau+konsultasi+website&type=phone_number&app_absent=0"
-  target="_blank"
-  className="fixed bottom-4 left-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center"
->
-  <FontAwesomeIcon icon={['fab', 'whatsapp']} className="w-6 h-6 mr-2" /> Tanya dulu
-</a>
+        href="https://api.whatsapp.com/send/?phone=%2B6287742679972&text=Halo+VVUAT.web+saya+mau+konsultasi+website&type=phone_number&app_absent=0"
+        target="_blank"
+        className="fixed bottom-4 left-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center"
+      >
+        <FontAwesomeIcon icon={["fab", "whatsapp"]} className="w-6 h-6 mr-2" /> Gratis Konsultasi
+      </a>
     </div>
   );
 }
 
-function BoltIcon(props) {
+function BoltIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
@@ -147,7 +158,7 @@ function BoltIcon(props) {
   );
 }
 
-function GaugeIcon(props) {
+function GaugeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m12 14 4-4" />
@@ -156,7 +167,7 @@ function GaugeIcon(props) {
   );
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
@@ -164,7 +175,7 @@ function MountainIcon(props) {
   );
 }
 
-function ShieldIcon(props) {
+function ShieldIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
@@ -172,7 +183,7 @@ function ShieldIcon(props) {
   );
 }
 
-function UsersIcon(props) {
+function UsersIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -183,7 +194,7 @@ function UsersIcon(props) {
   );
 }
 
-function WhatsAppIcon(props) {
+function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M21.5 12a9.5 9.5 0 1 1-17.8-4.2L2 2l5.8 1.7A9.5 9.5 0 0 1 21.5 12z" />

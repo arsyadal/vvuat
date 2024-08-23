@@ -1,9 +1,18 @@
+import Image from "next/image";
+import React from "react";
+
 export function Work() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 ">
       <div className="container grid gap-6 lg:grid-cols-2 lg:gap-12 px-4 md:px-6">
         <div className="flex items-center justify-center">
-          <img src="/work.png" alt="Descriptive Alt Text" className="rounded-xl" />
+          <Image
+            src="/work.png"
+            alt="Descriptive Alt Text"
+            width={500} // Sesuaikan dengan ukuran yang diinginkan
+            height={500} // Sesuaikan dengan ukuran yang diinginkan
+            className="rounded-xl"
+          />
         </div>
         <div className="grid items-center justify-center gap-4 text-center lg:gap-10">
           <div className="space-y-3">
@@ -42,7 +51,7 @@ export function Work() {
   );
 }
 
-function ClipboardIcon(props) {
+function ClipboardIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
@@ -51,7 +60,7 @@ function ClipboardIcon(props) {
   );
 }
 
-function CodeIcon(props) {
+function CodeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="16 18 22 12 16 6" />
@@ -60,7 +69,7 @@ function CodeIcon(props) {
   );
 }
 
-function LayersIcon(props) {
+function LayersIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />

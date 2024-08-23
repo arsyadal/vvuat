@@ -28,7 +28,7 @@ export default function Component() {
   );
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
@@ -36,7 +36,7 @@ function MountainIcon(props) {
   );
 }
 
-function WhatsappIcon(props) {
+function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M16.72 11.06a1.2 1.2 0 0 0-1.2-1.2h-1.2a1.2 1.2 0 0 0-1.2 1.2v1.2a1.2 1.2 0 0 0 1.2 1.2h1.2a1.2 1.2 0 0 0 1.2-1.2v-1.2zM12 2a10 10 0 0 0-10 10 10 10 0 0 0 1.45 5.18L2 22l4.82-1.45A10 10 0 1 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
@@ -44,7 +44,7 @@ function WhatsappIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

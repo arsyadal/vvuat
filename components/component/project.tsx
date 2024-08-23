@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -33,7 +34,7 @@ export function Project() {
                 <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View Project</span>
                 </Link>
-                <img src="/deduke.png" alt="Project 1" width={400} height={300} className="object-cover w-full h-60" style={{ aspectRatio: "400/300", objectFit: "cover" }} />
+                <Image src="/deduke.png" alt="Project 1" width={400} height={300} className="object-cover w-full h-60" style={{ aspectRatio: "400/300", objectFit: "cover" }} />{" "}
                 <div className="p-4 bg-background">
                   <Link href="https://dedukeid.com/" target="_blank" rel="noopener noreferrer" prefetch={false}>
                     <h3 className="text-lg font-semibold md:text-xl text-blue-500">dedukeid.com</h3>
@@ -52,7 +53,7 @@ export function Project() {
             <button className="absolute top-2 right-2 text-black" onClick={handleCloseModal}>
               &times;
             </button>
-            <img src="/deduke.png" alt="Project 1" className="object-cover w-full h-auto" style={{ maxWidth: "90vw", maxHeight: "90vh" }} />
+            <Image src="/deduke.png" alt="Project 1" width={800} height={600} className="object-cover w-full h-auto" style={{ maxWidth: "90vw", maxHeight: "90vh" }} />{" "}
           </div>
         </div>
       )}
@@ -60,7 +61,7 @@ export function Project() {
   );
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />

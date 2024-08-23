@@ -21,8 +21,8 @@ export function Testimoni() {
               </div>
             </div>
             <blockquote className="text-lg leading-relaxed text-blue-500">
-              "Luar biasa! Saya sangat puas dengan hasil website yang dibuat oleh VVUAT. Desainnya elegan dan fungsional, sesuai dengan kebutuhan bisnis saya. Tim mereka sangat profesional, responsif, dan cepat dalam menangani semua
-              permintaan saya. Website saya sekarang tidak hanya menarik secara visual, tetapi juga mudah digunakan oleh pengunjung. Terima kasih banyak!."
+              &quot;Luar biasa! Saya sangat puas dengan hasil website yang dibuat oleh VVUAT. Desainnya elegan dan fungsional, sesuai dengan kebutuhan bisnis saya. Tim mereka sangat profesional, responsif, dan cepat dalam menangani semua
+              permintaan saya. Website saya sekarang tidak hanya menarik secara visual, tetapi juga mudah digunakan oleh pengunjung. Terima kasih banyak!&quot;
             </blockquote>
           </div>
         </div>
